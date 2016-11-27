@@ -1,7 +1,6 @@
 ---
 layout: recipe
 title: Pannkakor
-date: 2016-11-27 13:04:34 +0100
 categories: easy
 ingredients:
   - amount: 2dl
