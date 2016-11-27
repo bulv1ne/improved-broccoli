@@ -1,0 +1,25 @@
+---
+layout: post
+---
+<div class="ingredients">
+  <h2>Ingredienser</h2>
+  <ul>
+  {% for item in page.ingredients %}
+    <li>{{item.amount}} <b>{{item.name}}</b></li>
+  {% endfor %}
+  </ul>
+
+  {% if page.extra_ingredients %}
+  <h3>Extra</h3>
+  <ul>
+  {% for item in page.extra_ingredients %}
+    <li>{{item.amount}} <b>{{item.name}}</b></li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+
+<div class="preparation">
+  <h2>Tillagning</h2>
+  {{ content }}
+</div>
