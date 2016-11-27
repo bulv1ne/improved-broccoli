@@ -2,6 +2,7 @@
 layout: recipe
 title: Pannkakor
 categories: easy
+date: 2016-11-27
 ingredients:
   - amount: 2dl
     name: glutenfri mjöl

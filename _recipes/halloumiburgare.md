@@ -2,6 +2,7 @@
 layout: recipe
 title: Halloumiburgare
 categories: easy
+date: 2016-11-27
 ingredients:
   - amount: 1st
     name: halloumi
