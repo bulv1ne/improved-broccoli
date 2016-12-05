@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  {% if jekyll.environment == 'production' %}
+  <link rel="stylesheet" href="{{ '/assets/css/foundation.min.css' | relative_url }}">
+  {% else %}
+  <link rel="stylesheet" href="{{ '/assets/css/foundation.css' | relative_url }}">
+  {% endif %}
+
+  <link rel="icon" sizes="192x192" href="{{ '/assets/img/Icon-192.png' | absolute_url }}">
+  <link rel="icon" sizes="128x128" href="{{ '/assets/img/Icon-128.png' | absolute_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/Icon-60.png' | absolute_url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/img/Icon-76.png' | absolute_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ '/assets/img/Icon-120.png' | absolute_url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ '/assets/img/Icon-152.png' | absolute_url }}">
+</head>

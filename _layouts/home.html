@@ -1,25 +1,19 @@
 ---
-layout: default
+layout: page
 ---
+<h3>Recipes</h3>
 
-<div class="home">
+{{ content }}
 
-  <h1 class="page-heading">Recipes</h1>
+<ul>
+  {% for post in site.recipes %}
+  <li>
+    <h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.recipes %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        {% if post.description %}
-        <p>{{ post.description | escape }}</p>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+    {% if post.description %}
+    <p>{{ post.description | escape }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
