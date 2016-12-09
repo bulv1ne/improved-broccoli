@@ -1,19 +1,13 @@
 ---
 layout: page
 ---
-<h3>Recipes</h3>
-
-{{ content }}
-
-<ul>
+<ul class="table-view">
+  <li class="table-view-cell table-view-divider">Recipes</li>
   {% for post in site.recipes %}
-  <li>
-    <h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-    {% if post.description %}
-    <p>{{ post.description | escape }}</p>
-    {% endif %}
+  <li class="table-view-cell">
+    <a href="{{ post.url | relative_url }}" class="navigate-right" data-transition="slide-in">
+      {{ post.title | escape }}
+    </a>
   </li>
   {% endfor %}
 </ul>

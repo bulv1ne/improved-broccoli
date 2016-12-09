@@ -1,25 +1,27 @@
 ---
 layout: post
 ---
-<div class="ingredients">
-  <h2>Ingredienser</h2>
-  <ul>
-  {% for item in page.ingredients %}
-    <li>{{item.amount}} <b>{{item.name}}</b></li>
-  {% endfor %}
-  </ul>
+<div class="content-padded">
+  <div class="ingredients">
+    <h4>Ingredienser</h4>
+    <ul>
+    {% for item in page.ingredients %}
+      <li>{{item.amount}} <b>{{item.name}}</b></li>
+    {% endfor %}
+    </ul>
 
-  {% if page.extra_ingredients %}
-  <h3>Extra</h3>
-  <ul>
-  {% for item in page.extra_ingredients %}
-    <li>{{item.amount}} <b>{{item.name}}</b></li>
-  {% endfor %}
-  </ul>
-  {% endif %}
-</div>
+    {% if page.extra_ingredients %}
+    <h3>Extra</h3>
+    <ul>
+    {% for item in page.extra_ingredients %}
+      <li>{{item.amount}} <b>{{item.name}}</b></li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
 
-<div class="preparation">
-  <h2>Tillagning</h2>
-  {{ content }}
+  <div class="preparation">
+    <h4>Tillagning</h4>
+    {{ content }}
+  </div>
 </div>
