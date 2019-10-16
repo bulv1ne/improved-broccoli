@@ -6,8 +6,6 @@ categories:
 date: 2019-09-23
 ingredients:
   - amount: 1st
-    name: halloumi
-  - amount: 1st
     name: gul lök
   - amount: 2 klyftor
     name: vitlök
